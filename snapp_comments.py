@@ -1,10 +1,8 @@
-import re
 import requests
 import json
 
 start = 1
 end = 200
-# snapp_text = open('snapp_comments3.json', 'a+', encoding="utf-8")
 url = 'https://api.cafebazaar.ir/rest-v1/process/ReviewRequest'
 
 comments = ["id", "date", "versionCode", "rate", "likes", "comment"]
@@ -27,5 +25,3 @@ for i in range(30):
 with open('comments2.csv', 'a', encoding="utf-8") as f:
     f.write(str(comments))
 print(len(comments))
-
-# snapp_text.write(file)
